@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppCalculadora"
+             x:Class="AppCalculadora.MainPage">
+    <StackLayout BackgroundColor="AliceBlue">
+        <ProgressBar BackgroundColor="DarkBlue"/>
+        <BoxView BackgroundColor="DarkRed"/>
+        <ProgressBar BackgroundColor="DarkBlue"/>
+        <Label x:Name="LabelNomedaTela" 
+               Text="Calculadora"
+               FontSize="Large"
+               TextColor="Black"
+               HorizontalOptions="Center"/>
+        <Entry Keyboard="Numeric" x:Name="EntryNumeros"
+               BackgroundColor="DarkBlue"/>
+        <BoxView/>
+        <StackLayout Orientation="Horizontal">
+            
+            <Button x:Name="ButtonNumero7" 
+                Text="7"
+                Clicked="ButtonNumero7_Clicked" 
+                    BackgroundColor="DarkBlue"
+                FontSize="Small" TextColor="White"    
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Button x:Name="ButtonNumero8"
+                Text="8"
+                FontSize="Small" TextColor="White"    
+                BackgroundColor="DarkBlue"
+                    Clicked="ButtonNumero8_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Button x:Name="ButtonNumero9"
+                Text="9"
+                 FontSize="Small" TextColor="White"  
+                BackgroundColor="DarkBlue"
+                    Clicked="ButtonNumero9_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Button x:Name="ButtonSomar"
+                Text="+"
+                FontSize="Small" TextColor="White" 
+                BackgroundColor="DarkRed" 
+                    Clicked="ButtonSomar_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="ButtonNumero6"
+                Text="6"
+                FontSize="Small" TextColor="White"     
+                BackgroundColor="DarkBlue" 
+                    Clicked="ButtonNumero6_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Button x:Name="ButtonNumero5"
+                Text="5"
+                FontSize="Small" TextColor="White"    
+                BackgroundColor="DarkBlue" 
+                    Clicked="ButtonNumero5_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Button x:Name="ButtonNumero4"
+                Text="4"
+                FontSize="Small" TextColor="White"    
+                BackgroundColor="DarkBlue"
+                    Clicked="ButtonNumero4_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Button x:Name="ButtonMultiplicar"
+                Text="*"
+                FontSize="Small" TextColor="White"    
+                BackgroundColor="DarkRed"    
+                    Clicked="ButtonMultiplicar_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            
+            <Button x:Name="ButtonNumero3"
+                Text="3"
+                FontSize="Small" TextColor="White"    
+                BackgroundColor="DarkBlue" 
+                    Clicked="ButtonNumero3_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Button x:Name="ButtonNumero2"
+                Text="2"
+                FontSize="Small" TextColor="White"    
+                BackgroundColor="DarkBlue"  
+                    Clicked="ButtonNumero2_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+
+            <Button x:Name="ButtonNumero1"
+                Text="1"
+                FontSize="Small" TextColor="White"    
+                BackgroundColor="DarkBlue"    
+                HorizontalOptions="FillAndExpand"
+                Clicked="ButtonNumero1_Clicked"></Button>
+            
+            <Button x:Name="ButtonSubtrair"
+                Text="-"
+                FontSize="Small" TextColor="White"    
+                BackgroundColor="DarkRed"  
+                    Clicked="ButtonSubtrair_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+
+            <Button x:Name="ButtonNumero0"
+                Text="0"
+                FontSize="Small" TextColor="White"    
+                BackgroundColor="DarkBlue"
+                    Clicked="ButtonNumero0_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Button x:Name="ButtonCE"
+                Text="CE"
+                FontSize="Small" TextColor="White"    
+                BackgroundColor="DarkBlue"
+                    Clicked="ButtonCE_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Button x:Name="ButtonResultado"
+                Text="="
+                FontSize="Small" TextColor="White"    
+                BackgroundColor="DarkBlue" 
+                    Clicked="ButtonResultado_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+            
+            <Button x:Name="ButtonDividir"
+                Text="/"
+                FontSize="Small" TextColor="White"    
+                BackgroundColor="DarkRed"
+                    Clicked="ButtonDividir_Clicked"
+                HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
